@@ -269,7 +269,7 @@
     <script>
   AOS.init({
     duration: 800,
-    offset: 80,
+    offset: 70,
     once: true,
     easing: 'ease-out-cubic'
   });
@@ -340,6 +340,12 @@ form.addEventListener("submit", function(e) {
   });
 });
 </script>
-
+<script>
+  if (window.innerWidth < 768) {
+    document.querySelectorAll("[data-aos='fade-left'], [data-aos='fade-right']").forEach(el => {
+      el.setAttribute("data-aos", "fade-up");
+    });
+  }
+</script>
 </body>
 </html>

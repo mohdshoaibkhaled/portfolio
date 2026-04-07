@@ -744,11 +744,11 @@ font-size: 0.8rem;
   }
   header{
     margin-left:10px;
-    /* width: 768px; */
+    width: auto;
   }
   .navbar{
     margin-left: 15px;
-    /* width: 320px; */
+    width: auto;
   }
   .navlinks {
     position: fixed;

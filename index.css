@@ -734,7 +734,7 @@ font-size: 0.8rem;
   }
   .navbar{
     margin-left: 15px;
-    width: 320px;
+    /* width: 320px; */
   }
   .navlinks {
     position: fixed;

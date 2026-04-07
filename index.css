@@ -25,17 +25,23 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 html{
   scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 section{
-  padding: 80px 0;
+  padding: 80px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 header{
   position: sticky;
@@ -652,6 +658,8 @@ font-size: 0.8rem;
 
 [data-aos] {
   transition-timing-function: ease-out;
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
 }
 
 .navlinks {
@@ -724,7 +732,13 @@ font-size: 0.8rem;
 
 /* ================= MOBILE NAV FINAL ================= */
 @media (max-width: 768px) {
-
+  section{
+    padding: 60px 15px;
+  }
+  h1{font-size: 26px;}
+  h2{font-size: 22px;}
+  h3{font-size: 18px;}
+  p{font-size: 14px;}
   .menu-toggle {
     display: block;
   }
@@ -805,10 +819,4 @@ font-size: 0.8rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
-body {
-  overflow-x: hidden;
-}
-html {
-  scroll-padding-top: 80px;
 }

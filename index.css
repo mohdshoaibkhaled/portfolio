@@ -356,7 +356,7 @@ margin-bottom: 40px;
   align-items: center;
   border: 1px solid var(--border);
   background-color: var(--bg-card);
-  padding: 10px;
+  padding-bottom: 10px;
   transition:all 0.3s ease;
   border-radius: 10px;
   overflow: hidden;
